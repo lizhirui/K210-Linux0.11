@@ -1,0 +1,9 @@
+D:\程序\项目\K210-Linux0.11-VS\tools_src\depfileconvert\bin\Debug\depfileconvert.exe.config
+D:\程序\项目\K210-Linux0.11-VS\tools_src\depfileconvert\bin\Debug\depfileconvert.exe
+D:\程序\项目\K210-Linux0.11-VS\tools_src\depfileconvert\bin\Debug\depfileconvert.pdb
+D:\程序\项目\K210-Linux0.11-VS\tools_src\depfileconvert\obj\Debug\depfileconvert.csprojAssemblyReference.cache
+D:\程序\项目\K210-Linux0.11-VS\tools_src\depfileconvert\obj\Debug\depfileconvert.exe
+D:\程序\项目\K210-Linux0.11-VS\tools_src\depfileconvert\obj\Debug\depfileconvert.pdb
+D:\程序\项目\K210-Linux0.11-VS\tools\bin\depfileconvert.exe.config
+D:\程序\项目\K210-Linux0.11-VS\tools\bin\depfileconvert.exe
+D:\程序\项目\K210-Linux0.11-VS\tools\bin\depfileconvert.pdb

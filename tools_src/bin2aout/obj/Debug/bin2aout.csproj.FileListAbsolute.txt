@@ -1,0 +1,6 @@
+D:\程序\项目\K210-Linux0.11-VS\tools\bin2aout.exe.config
+D:\程序\项目\K210-Linux0.11-VS\tools\bin2aout.exe
+D:\程序\项目\K210-Linux0.11-VS\tools\bin2aout.pdb
+D:\程序\项目\K210-Linux0.11-VS\tools_src\bin2aout\obj\Debug\bin2aout.csprojAssemblyReference.cache
+D:\程序\项目\K210-Linux0.11-VS\tools_src\bin2aout\obj\Debug\bin2aout.exe
+D:\程序\项目\K210-Linux0.11-VS\tools_src\bin2aout\obj\Debug\bin2aout.pdb

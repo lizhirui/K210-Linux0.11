@@ -1,0 +1,9 @@
+D:\程序\项目\K210-Linux0.11-VS\tools_src\run\bin\Debug\run.exe.config
+D:\程序\项目\K210-Linux0.11-VS\tools_src\run\bin\Debug\run.exe
+D:\程序\项目\K210-Linux0.11-VS\tools_src\run\bin\Debug\run.pdb
+D:\程序\项目\K210-Linux0.11-VS\tools_src\run\obj\Debug\run.csprojAssemblyReference.cache
+D:\程序\项目\K210-Linux0.11-VS\tools_src\run\obj\Debug\run.exe
+D:\程序\项目\K210-Linux0.11-VS\tools_src\run\obj\Debug\run.pdb
+D:\程序\项目\K210-Linux0.11-VS\tools\run.exe.config
+D:\程序\项目\K210-Linux0.11-VS\tools\run.exe
+D:\程序\项目\K210-Linux0.11-VS\tools\run.pdb

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\boot\bootsect.s" />
+    <None Include="src\boot\head.s" />
+    <None Include="src\boot\setup.s" />
+    <None Include="src\fs\Makefile" />
+    <None Include="src\kernel\asm.s" />
+    <None Include="src\kernel\blk_drv\Makefile" />
+    <None Include="src\kernel\chr_drv\keyboard.S" />
+    <None Include="src\kernel\chr_drv\Makefile" />
+    <None Include="src\kernel\chr_drv\rs_io.s" />
+    <None Include="src\kernel\Makefile" />
+    <None Include="src\kernel\math\Makefile" />
+    <None Include="src\kernel\system_call.s" />
+    <None Include="src\lib\Makefile" />
+    <None Include="src\Makefile" />
+    <None Include="src\mm\Makefile" />
+    <None Include="src\mm\page.s" />
+    <None Include="src_test\image.bin" />
+    <None Include="src_test\kernel\sched_call.S" />
+    <None Include="src_test\kernel\system_call.S" />
+    <None Include="src_test\linker.ld" />
+    <None Include="src_test\linker_user.ld" />
+    <None Include="src_test\riscvfunc\func.S" />
+    <None Include="src_test\rootfs.bin" />
+    <None Include="src_test\run.bat" />
+    <None Include="src_test\startup\startup_init.S" />
+    <None Include="src_test\system.bin" />
+    <None Include="src_test\trap\machine_trap.S" />
+    <None Include="src_test\trap\supervisor_trap.S" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\fs\bitmap.c" />
+    <ClCompile Include="src\fs\block_dev.c" />
+    <ClCompile Include="src\fs\buffer.c" />
+    <ClCompile Include="src\fs\char_dev.c" />
+    <ClCompile Include="src\fs\exec.c" />
+    <ClCompile Include="src\fs\fcntl.c" />
+    <ClCompile Include="src\fs\file_dev.c" />
+    <ClCompile Include="src\fs\file_table.c" />
+    <ClCompile Include="src\fs\inode.c" />
+    <ClCompile Include="src\fs\ioctl.c" />
+    <ClCompile Include="src\fs\namei.c" />
+    <ClCompile Include="src\fs\open.c" />
+    <ClCompile Include="src\fs\pipe.c" />
+    <ClCompile Include="src\fs\read_write.c" />
+    <ClCompile Include="src\fs\stat.c" />
+    <ClCompile Include="src\fs\super.c" />
+    <ClCompile Include="src\fs\truncate.c" />
+    <ClCompile Include="src\init\main.c" />
+    <ClCompile Include="src\kernel\blk_drv\floppy.c" />
+    <ClCompile Include="src\kernel\blk_drv\hd.c" />
+    <ClCompile Include="src\kernel\blk_drv\ll_rw_blk.c" />
+    <ClCompile Include="src\kernel\blk_drv\ramdisk.c" />
+    <ClCompile Include="src\kernel\chr_drv\console.c" />
+    <ClCompile Include="src\kernel\chr_drv\serial.c" />
+    <ClCompile Include="src\kernel\chr_drv\tty_io.c" />
+    <ClCompile Include="src\kernel\chr_drv\tty_ioctl.c" />
+    <ClCompile Include="src\kernel\exit.c" />
+    <ClCompile Include="src\kernel\fork.c" />
+    <ClCompile Include="src\kernel\math\math_emulate.c" />
+    <ClCompile Include="src\kernel\mktime.c" />
+    <ClCompile Include="src\kernel\panic.c" />
+    <ClCompile Include="src\kernel\printk.c" />
+    <ClCompile Include="src\kernel\sched.c" />
+    <ClCompile Include="src\kernel\signal.c" />
+    <ClCompile Include="src\kernel\sys.c" />
+    <ClCompile Include="src\kernel\traps.c" />
+    <ClCompile Include="src\kernel\vsprintf.c" />
+    <ClCompile Include="src\lib\close.c" />
+    <ClCompile Include="src\lib\ctype.c" />
+    <ClCompile Include="src\lib\dup.c" />
+    <ClCompile Include="src\lib\errno.c" />
+    <ClCompile Include="src\lib\execve.c" />
+    <ClCompile Include="src\lib\malloc.c" />
+    <ClCompile Include="src\lib\open.c" />
+    <ClCompile Include="src\lib\setsid.c" />
+    <ClCompile Include="src\lib\string.c" />
+    <ClCompile Include="src\lib\wait.c" />
+    <ClCompile Include="src\lib\write.c" />
+    <ClCompile Include="src\lib\_exit.c" />
+    <ClCompile Include="src\mm\memory.c" />
+    <ClCompile Include="src_test\bsp\locks.c" />
+    <ClCompile Include="src_test\bsp\sleep.c" />
+    <ClCompile Include="src_test\common.c" />
+    <ClCompile Include="src_test\drivers\aes.c" />
+    <ClCompile Include="src_test\drivers\apu.c" />
+    <ClCompile Include="src_test\drivers\clint.c" />
+    <ClCompile Include="src_test\drivers\dmac.c" />
+    <ClCompile Include="src_test\drivers\dvp.c" />
+    <ClCompile Include="src_test\drivers\fft.c" />
+    <ClCompile Include="src_test\drivers\fpioa.c" />
+    <ClCompile Include="src_test\drivers\gpio.c" />
+    <ClCompile Include="src_test\drivers\gpiohs.c" />
+    <ClCompile Include="src_test\drivers\i2c.c" />
+    <ClCompile Include="src_test\drivers\otp.c" />
+    <ClCompile Include="src_test\drivers\plic.c" />
+    <ClCompile Include="src_test\drivers\pwm.c" />
+    <ClCompile Include="src_test\drivers\rtc.c" />
+    <ClCompile Include="src_test\drivers\sha256.c" />
+    <ClCompile Include="src_test\drivers\spi.c" />
+    <ClCompile Include="src_test\drivers\sysctl.c" />
+    <ClCompile Include="src_test\drivers\timer.c" />
+    <ClCompile Include="src_test\drivers\uart.c" />
+    <ClCompile Include="src_test\drivers\uarths.c" />
+    <ClCompile Include="src_test\drivers\utils.c" />
+    <ClCompile Include="src_test\drivers\wdt.c" />
+    <ClCompile Include="src_test\fs\bitmap.c" />
+    <ClCompile Include="src_test\fs\block_dev.c" />
+    <ClCompile Include="src_test\fs\buffer.c" />
+    <ClCompile Include="src_test\fs\char_dev.c" />
+    <ClCompile Include="src_test\fs\exec.c" />
+    <ClCompile Include="src_test\fs\fcntl.c" />
+    <ClCompile Include="src_test\fs\file_dev.c" />
+    <ClCompile Include="src_test\fs\file_table.c" />
+    <ClCompile Include="src_test\fs\inode.c" />
+    <ClCompile Include="src_test\fs\ioctl.c" />
+    <ClCompile Include="src_test\fs\namei.c" />
+    <ClCompile Include="src_test\fs\open.c" />
+    <ClCompile Include="src_test\fs\pipe.c" />
+    <ClCompile Include="src_test\fs\read_write.c" />
+    <ClCompile Include="src_test\fs\stat.c" />
+    <ClCompile Include="src_test\fs\super.c" />
+    <ClCompile Include="src_test\fs\truncate.c" />
+    <ClCompile Include="src_test\kernel\blk_drv\ll_rw_blk.c" />
+    <ClCompile Include="src_test\kernel\blk_drv\ramdisk.c" />
+    <ClCompile Include="src_test\kernel\chr_drv\serial.c" />
+    <ClCompile Include="src_test\kernel\chr_drv\tty_io.c" />
+    <ClCompile Include="src_test\kernel\chr_drv\tty_ioctl.c" />
+    <ClCompile Include="src_test\kernel\exit.c" />
+    <ClCompile Include="src_test\kernel\fork.c" />
+    <ClCompile Include="src_test\kernel\mktime.c" />
+    <ClCompile Include="src_test\kernel\panic.c" />
+    <ClCompile Include="src_test\kernel\printk.c" />
+    <ClCompile Include="src_test\kernel\sched.c" />
+    <ClCompile Include="src_test\kernel\segment.c" />
+    <ClCompile Include="src_test\kernel\signal.c" />
+    <ClCompile Include="src_test\kernel\sys.c" />
+    <ClCompile Include="src_test\Makefile" />
+    <ClCompile Include="src_test\mm\memory.c" />
+    <ClCompile Include="src_test\riscvfunc\core.c" />
+    <ClCompile Include="src_test\riscvfunc\csr_define.c" />
+    <ClCompile Include="src_test\riscvfunc\page_table.c" />
+    <ClCompile Include="src_test\riscvfunc\page_table_entry.c" />
+    <ClCompile Include="src_test\riscvfunc\privilege.c" />
+    <ClCompile Include="src_test\riscvfunc\syslog.c" />
+    <ClCompile Include="src_test\startup\entry.c" />
+    <ClCompile Include="src_test\startup\machine_main.c" />
+    <ClCompile Include="src_test\startup\supervisor_main.c" />
+    <ClCompile Include="src_test\trap\machine_exception.c" />
+    <ClCompile Include="src_test\trap\machine_interrupt.c" />
+    <ClCompile Include="src_test\trap\supervisor_exception.c" />
+    <ClCompile Include="src_test\trap\supervisor_interrupt.c" />
+    <ClCompile Include="src_test\trap\trap_common.c" />
+    <ClCompile Include="src_test\user\test\test_main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\include\a.out.h" />
+    <ClInclude Include="src\include\asm\io.h" />
+    <ClInclude Include="src\include\asm\memory.h" />
+    <ClInclude Include="src\include\asm\segment.h" />
+    <ClInclude Include="src\include\asm\system.h" />
+    <ClInclude Include="src\include\const.h" />
+    <ClInclude Include="src\include\ctype.h" />
+    <ClInclude Include="src\include\errno.h" />
+    <ClInclude Include="src\include\fcntl.h" />
+    <ClInclude Include="src\include\linux\config.h" />
+    <ClInclude Include="src\include\linux\fdreg.h" />
+    <ClInclude Include="src\include\linux\fs.h" />
+    <ClInclude Include="src\include\linux\hdreg.h" />
+    <ClInclude Include="src\include\linux\head.h" />
+    <ClInclude Include="src\include\linux\kernel.h" />
+    <ClInclude Include="src\include\linux\mm.h" />
+    <ClInclude Include="src\include\linux\sched.h" />
+    <ClInclude Include="src\include\linux\sys.h" />
+    <ClInclude Include="src\include\linux\tty.h" />
+    <ClInclude Include="src\include\signal.h" />
+    <ClInclude Include="src\include\stdarg.h" />
+    <ClInclude Include="src\include\stddef.h" />
+    <ClInclude Include="src\include\string.h" />
+    <ClInclude Include="src\include\sys\stat.h" />
+    <ClInclude Include="src\include\sys\times.h" />
+    <ClInclude Include="src\include\sys\types.h" />
+    <ClInclude Include="src\include\sys\utsname.h" />
+    <ClInclude Include="src\include\sys\wait.h" />
+    <ClInclude Include="src\include\termios.h" />
+    <ClInclude Include="src\include\time.h" />
+    <ClInclude Include="src\include\unistd.h" />
+    <ClInclude Include="src\include\utime.h" />
+    <ClInclude Include="src\kernel\blk_drv\blk.h" />
+    <ClInclude Include="src_test\bsp\include\atomic.h" />
+    <ClInclude Include="src_test\bsp\include\bsp.h" />
+    <ClInclude Include="src_test\bsp\include\encoding.h" />
+    <ClInclude Include="src_test\bsp\include\platform.h" />
+    <ClInclude Include="src_test\bsp\include\sleep.h" />
+    <ClInclude Include="src_test\drivers\include\aes.h" />
+    <ClInclude Include="src_test\drivers\include\apu.h" />
+    <ClInclude Include="src_test\drivers\include\clint.h" />
+    <ClInclude Include="src_test\drivers\include\dmac.h" />
+    <ClInclude Include="src_test\drivers\include\dvp.h" />
+    <ClInclude Include="src_test\drivers\include\fft.h" />
+    <ClInclude Include="src_test\drivers\include\fpioa.h" />
+    <ClInclude Include="src_test\drivers\include\gpio.h" />
+    <ClInclude Include="src_test\drivers\include\gpiohs.h" />
+    <ClInclude Include="src_test\drivers\include\gpio_common.h" />
+    <ClInclude Include="src_test\drivers\include\i2c.h" />
+    <ClInclude Include="src_test\drivers\include\io.h" />
+    <ClInclude Include="src_test\drivers\include\otp.h" />
+    <ClInclude Include="src_test\drivers\include\plic.h" />
+    <ClInclude Include="src_test\drivers\include\pwm.h" />
+    <ClInclude Include="src_test\drivers\include\rtc.h" />
+    <ClInclude Include="src_test\drivers\include\sha256.h" />
+    <ClInclude Include="src_test\drivers\include\spi.h" />
+    <ClInclude Include="src_test\drivers\include\sysctl.h" />
+    <ClInclude Include="src_test\drivers\include\timer.h" />
+    <ClInclude Include="src_test\drivers\include\uart.h" />
+    <ClInclude Include="src_test\drivers\include\uarths.h" />
+    <ClInclude Include="src_test\drivers\include\utils.h" />
+    <ClInclude Include="src_test\drivers\include\wdt.h" />
+    <ClInclude Include="src_test\include\a.out.h" />
+    <ClInclude Include="src_test\include\asm\segment.h" />
+    <ClInclude Include="src_test\include\common.h" />
+    <ClInclude Include="src_test\include\const.h" />
+    <ClInclude Include="src_test\include\ctype.h" />
+    <ClInclude Include="src_test\include\drivers.h" />
+    <ClInclude Include="src_test\include\entry.h" />
+    <ClInclude Include="src_test\include\errno.h" />
+    <ClInclude Include="src_test\include\fcntl.h" />
+    <ClInclude Include="src_test\include\linux\config.h" />
+    <ClInclude Include="src_test\include\linux\fs.h" />
+    <ClInclude Include="src_test\include\linux\kernel.h" />
+    <ClInclude Include="src_test\include\linux\mm.h" />
+    <ClInclude Include="src_test\include\linux\sched.h" />
+    <ClInclude Include="src_test\include\linux\sys.h" />
+    <ClInclude Include="src_test\include\linux\tty.h" />
+    <ClInclude Include="src_test\include\machine\ansi.h" />
+    <ClInclude Include="src_test\include\machine\endian.h" />
+    <ClInclude Include="src_test\include\machine\fastmath.h" />
+    <ClInclude Include="src_test\include\machine\ieeefp.h" />
+    <ClInclude Include="src_test\include\machine\malloc.h" />
+    <ClInclude Include="src_test\include\machine\param.h" />
+    <ClInclude Include="src_test\include\machine\setjmp-dj.h" />
+    <ClInclude Include="src_test\include\machine\setjmp.h" />
+    <ClInclude Include="src_test\include\machine\syscall.h" />
+    <ClInclude Include="src_test\include\machine\termios.h" />
+    <ClInclude Include="src_test\include\machine\time.h" />
+    <ClInclude Include="src_test\include\machine\types.h" />
+    <ClInclude Include="src_test\include\machine\_arc4random.h" />
+    <ClInclude Include="src_test\include\machine\_default_types.h" />
+    <ClInclude Include="src_test\include\machine\_endian.h" />
+    <ClInclude Include="src_test\include\machine\_time.h" />
+    <ClInclude Include="src_test\include\machine\_types.h" />
+    <ClInclude Include="src_test\include\math.h" />
+    <ClInclude Include="src_test\include\newlib.h" />
+    <ClInclude Include="src_test\include\signal.h" />
+    <ClInclude Include="src_test\include\stdarg.h" />
+    <ClInclude Include="src_test\include\stdbool.h" />
+    <ClInclude Include="src_test\include\stddef.h" />
+    <ClInclude Include="src_test\include\string.h" />
+    <ClInclude Include="src_test\include\strings.h" />
+    <ClInclude Include="src_test\include\sys\cdefs.h" />
+    <ClInclude Include="src_test\include\sys\config.h" />
+    <ClInclude Include="src_test\include\sys\features.h" />
+    <ClInclude Include="src_test\include\sys\lock.h" />
+    <ClInclude Include="src_test\include\sys\reent.h" />
+    <ClInclude Include="src_test\include\sys\stat.h" />
+    <ClInclude Include="src_test\include\sys\string.h" />
+    <ClInclude Include="src_test\include\sys\times.h" />
+    <ClInclude Include="src_test\include\sys\types.h" />
+    <ClInclude Include="src_test\include\sys\utsname.h" />
+    <ClInclude Include="src_test\include\sys\wait.h" />
+    <ClInclude Include="src_test\include\sys\_types.h" />
+    <ClInclude Include="src_test\include\termios.h" />
+    <ClInclude Include="src_test\include\time.h" />
+    <ClInclude Include="src_test\include\unistd.h" />
+    <ClInclude Include="src_test\include\utime.h" />
+    <ClInclude Include="src_test\include\xlocale.h" />
+    <ClInclude Include="src_test\include\_ansi.h" />
+    <ClInclude Include="src_test\include\_newlib_version.h" />
+    <ClInclude Include="src_test\kernel\blk_drv\blk.h" />
+    <ClInclude Include="src_test\riscvfunc\include\core.h" />
+    <ClInclude Include="src_test\riscvfunc\include\page_table.h" />
+    <ClInclude Include="src_test\riscvfunc\include\page_table_entry.h" />
+    <ClInclude Include="src_test\riscvfunc\include\privilege.h" />
+    <ClInclude Include="src_test\riscvfunc\include\csr_define.h" />
+    <ClInclude Include="src_test\riscvfunc\include\riscvfunc.h" />
+    <ClInclude Include="src_test\riscvfunc\include\stdio.h" />
+    <ClInclude Include="src_test\riscvfunc\include\syslog.h" />
+    <ClInclude Include="src_test\trap\include\machine_exception.h" />
+    <ClInclude Include="src_test\trap\include\machine_interrupt.h" />
+    <ClInclude Include="src_test\trap\include\supervisor_exception.h" />
+    <ClInclude Include="src_test\trap\include\supervisor_interrupt.h" />
+    <ClInclude Include="src_test\trap\include\trap.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src_test\system.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{8D1A43BF-D1C4-402F-A9D1-207721540D40}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeOutput>K210-Linux0.11-VS.exe</NMakeOutput>
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>.\tools\bin\make.exe -C .\src_test\</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>.\tools\bin\make.exe all -C .\src_test\</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>.\tools\bin\make.exe clean -C .\src_test\</NMakeCleanCommandLine>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);src_test\include;src_test\drivers\include;src_test\bsp\include;src_test\riscvfunc\include</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <NMakeOutput>.\tools\run.exe</NMakeOutput>
+    <NMakePreprocessorDefinitions>_DEBUG;$(NMakePreprocessorDefinitions);_VS;__riscv;__riscv64;__GNUC__</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>.\tools\bin\make.exe -C .\src_test\</NMakeBuildCommandLine>
+    <IncludePath>src_test\include;src_test\drivers\include;src_test\bsp\include;src_test\riscvfunc\include;src_test\trap\include</IncludePath>
+    <NMakeReBuildCommandLine>.\tools\bin\make.exe all -C .\src_test\</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>.\tools\bin\make.exe clean -C .\src_test\</NMakeCleanCommandLine>
+    <OutDir>$(SolutionDir)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeOutput>K210-Linux0.11-VS.exe</NMakeOutput>
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <NMakeOutput>K210-Linux0.11-VS.exe</NMakeOutput>
+    <NMakePreprocessorDefinitions>NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

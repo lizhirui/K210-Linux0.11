@@ -1,0 +1,6 @@
+D:\程序\项目\K210-Linux0.11-VS\tools_src\codegenerator\bin\Debug\codegenerator.exe.config
+D:\程序\项目\K210-Linux0.11-VS\tools_src\codegenerator\bin\Debug\codegenerator.exe
+D:\程序\项目\K210-Linux0.11-VS\tools_src\codegenerator\bin\Debug\codegenerator.pdb
+D:\程序\项目\K210-Linux0.11-VS\tools_src\codegenerator\obj\Debug\codegenerator.csprojAssemblyReference.cache
+D:\程序\项目\K210-Linux0.11-VS\tools_src\codegenerator\obj\Debug\codegenerator.exe
+D:\程序\项目\K210-Linux0.11-VS\tools_src\codegenerator\obj\Debug\codegenerator.pdb

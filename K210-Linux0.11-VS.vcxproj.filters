@@ -1,0 +1,985 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{cc70013d-336d-4f30-823a-68418fbb8a84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\boot">
+      <UniqueIdentifier>{dede5e77-2212-4008-8810-f1eba5d2814d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\fs">
+      <UniqueIdentifier>{2a1f36d0-4c28-4516-81ec-07d5a95bbb47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include">
+      <UniqueIdentifier>{716883d4-f8e8-4db6-9e59-9113699108dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\init">
+      <UniqueIdentifier>{b07b655b-209c-4ab2-8268-41c0af78ff59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kernel">
+      <UniqueIdentifier>{a98df15b-f358-440b-b4a9-9796f30a4f1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lib">
+      <UniqueIdentifier>{8b70dc27-e4ba-44e7-a90e-aa2e429038c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mm">
+      <UniqueIdentifier>{f08e68a0-dcf1-48d6-bce0-162a50bfa392}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\asm">
+      <UniqueIdentifier>{c3e2e5fb-fa15-4f3a-b321-3faf5bee6281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\linux">
+      <UniqueIdentifier>{da3c1c92-d400-4fac-a1f9-9bb13f87b539}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\sys">
+      <UniqueIdentifier>{38dea5bf-95a0-401d-8027-7d07ea284855}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kernel\blk_drv">
+      <UniqueIdentifier>{58c91937-849b-4109-b0c9-1326942c5832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kernel\chr_drv">
+      <UniqueIdentifier>{f35ad0ad-4f06-4b5c-8b2d-8f303521f964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kernel\math">
+      <UniqueIdentifier>{0443f87f-98ec-4a8f-ab25-f746465e0d33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test">
+      <UniqueIdentifier>{19b55aba-38f3-43f2-b2f1-f631ca00d084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\include">
+      <UniqueIdentifier>{4dab7e42-9dbd-4bae-8b2c-efe2c8e02630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\drivers">
+      <UniqueIdentifier>{25adfdfb-345a-4dfc-9e6c-b90e37069572}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\drivers\include">
+      <UniqueIdentifier>{8b1e04f1-0c79-4005-b0a9-6982ae7d8ff2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\bsp">
+      <UniqueIdentifier>{ff71a815-1bf7-40e1-a5ae-7b40a32cbb44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\bsp\include">
+      <UniqueIdentifier>{97193b4a-ffbf-436b-99c1-f62bc55dad37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\include\sys">
+      <UniqueIdentifier>{8365319f-a5fc-40c5-a90f-b50b29b00e39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\include\machine">
+      <UniqueIdentifier>{b7d6b80a-06c6-4421-b561-59b0a3bf04f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\riscvfunc">
+      <UniqueIdentifier>{175fb5c9-9b10-49c3-b1be-c4aedc87357d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\riscvfunc\include">
+      <UniqueIdentifier>{458f1446-f6f2-4909-a419-c67fdaf80e14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\startup">
+      <UniqueIdentifier>{974ae4be-add5-4db8-89bf-c14ff7ac27cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\trap">
+      <UniqueIdentifier>{d6e58457-fa93-4699-b841-317508fe3098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\trap\include">
+      <UniqueIdentifier>{812c2383-7176-4a0f-93d1-7b89fe7fde88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\mm">
+      <UniqueIdentifier>{004cb80e-eed0-4628-adb3-ba9a1937719a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\kernel">
+      <UniqueIdentifier>{31e5badc-870a-4adb-82ba-69c38afb168b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\include\linux">
+      <UniqueIdentifier>{359de5b3-7e4b-4bb8-9641-fd13ca968d4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\kernel\blk_drv">
+      <UniqueIdentifier>{fc6b940b-dbe2-4096-b934-c4580fed0cd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\kernel\chr_drv">
+      <UniqueIdentifier>{fb2e85b4-eace-48c6-a572-2398ff8922e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\fs">
+      <UniqueIdentifier>{eb375c22-c604-483d-b649-743c80f4e753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\include\asm">
+      <UniqueIdentifier>{7dbdd229-36af-46be-afc9-83834c41f53d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\user">
+      <UniqueIdentifier>{930e23d6-bb0d-4423-a440-8467a2ef708b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src_test\user\test">
+      <UniqueIdentifier>{0b33f121-4906-4cbf-9fad-185f119f524f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\Makefile">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\boot\head.s">
+      <Filter>src\boot</Filter>
+    </None>
+    <None Include="src\boot\setup.s">
+      <Filter>src\boot</Filter>
+    </None>
+    <None Include="src\boot\bootsect.s">
+      <Filter>src\boot</Filter>
+    </None>
+    <None Include="src\fs\Makefile">
+      <Filter>src\fs</Filter>
+    </None>
+    <None Include="src\kernel\blk_drv\Makefile">
+      <Filter>src\kernel\blk_drv</Filter>
+    </None>
+    <None Include="src\kernel\chr_drv\keyboard.S">
+      <Filter>src\kernel\chr_drv</Filter>
+    </None>
+    <None Include="src\kernel\chr_drv\Makefile">
+      <Filter>src\kernel\chr_drv</Filter>
+    </None>
+    <None Include="src\kernel\chr_drv\rs_io.s">
+      <Filter>src\kernel\chr_drv</Filter>
+    </None>
+    <None Include="src\kernel\math\Makefile">
+      <Filter>src\kernel\math</Filter>
+    </None>
+    <None Include="src\kernel\asm.s">
+      <Filter>src\kernel</Filter>
+    </None>
+    <None Include="src\kernel\Makefile">
+      <Filter>src\kernel</Filter>
+    </None>
+    <None Include="src\kernel\system_call.s">
+      <Filter>src\kernel</Filter>
+    </None>
+    <None Include="src\lib\Makefile">
+      <Filter>src\lib</Filter>
+    </None>
+    <None Include="src\mm\Makefile">
+      <Filter>src\mm</Filter>
+    </None>
+    <None Include="src\mm\page.s">
+      <Filter>src\mm</Filter>
+    </None>
+    <None Include="src_test\linker.ld">
+      <Filter>src_test</Filter>
+    </None>
+    <None Include="src_test\image.bin">
+      <Filter>src_test</Filter>
+    </None>
+    <None Include="src_test\trap\machine_trap.S">
+      <Filter>src_test\trap</Filter>
+    </None>
+    <None Include="src_test\trap\supervisor_trap.S">
+      <Filter>src_test\trap</Filter>
+    </None>
+    <None Include="src_test\startup\startup_init.S">
+      <Filter>src_test\startup</Filter>
+    </None>
+    <None Include="src_test\kernel\system_call.S">
+      <Filter>src_test\kernel</Filter>
+    </None>
+    <None Include="src_test\riscvfunc\func.S">
+      <Filter>src_test\riscvfunc</Filter>
+    </None>
+    <None Include="src_test\system.bin">
+      <Filter>src_test</Filter>
+    </None>
+    <None Include="src_test\rootfs.bin">
+      <Filter>src_test</Filter>
+    </None>
+    <None Include="src_test\kernel\sched_call.S">
+      <Filter>src_test\kernel</Filter>
+    </None>
+    <None Include="src_test\run.bat">
+      <Filter>src_test</Filter>
+    </None>
+    <None Include="src_test\linker_user.ld">
+      <Filter>src_test</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\fs\bitmap.c">
+      <Filter>src\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fs\block_dev.c">
+      <Filter>src\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fs\buffer.c">
+      <Filter>src\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fs\char_dev.c">
+      <Filter>src\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fs\exec.c">
+      <Filter>src\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fs\fcntl.c">
+      <Filter>src\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fs\file_dev.c">
+      <Filter>src\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fs\file_table.c">
+      <Filter>src\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fs\inode.c">
+      <Filter>src\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fs\ioctl.c">
+      <Filter>src\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fs\namei.c">
+      <Filter>src\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fs\open.c">
+      <Filter>src\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fs\pipe.c">
+      <Filter>src\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fs\read_write.c">
+      <Filter>src\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fs\stat.c">
+      <Filter>src\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fs\super.c">
+      <Filter>src\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fs\truncate.c">
+      <Filter>src\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\init\main.c">
+      <Filter>src\init</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\blk_drv\floppy.c">
+      <Filter>src\kernel\blk_drv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\blk_drv\hd.c">
+      <Filter>src\kernel\blk_drv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\blk_drv\ll_rw_blk.c">
+      <Filter>src\kernel\blk_drv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\blk_drv\ramdisk.c">
+      <Filter>src\kernel\blk_drv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\chr_drv\console.c">
+      <Filter>src\kernel\chr_drv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\chr_drv\serial.c">
+      <Filter>src\kernel\chr_drv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\chr_drv\tty_io.c">
+      <Filter>src\kernel\chr_drv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\chr_drv\tty_ioctl.c">
+      <Filter>src\kernel\chr_drv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\math\math_emulate.c">
+      <Filter>src\kernel\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\exit.c">
+      <Filter>src\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\fork.c">
+      <Filter>src\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\mktime.c">
+      <Filter>src\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\panic.c">
+      <Filter>src\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\printk.c">
+      <Filter>src\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\sched.c">
+      <Filter>src\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\signal.c">
+      <Filter>src\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\sys.c">
+      <Filter>src\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\traps.c">
+      <Filter>src\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\vsprintf.c">
+      <Filter>src\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\_exit.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\close.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\ctype.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\dup.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\errno.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\execve.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\malloc.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\open.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\setsid.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\string.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\wait.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\write.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mm\memory.c">
+      <Filter>src\mm</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\Makefile">
+      <Filter>src_test</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\clint.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\dmac.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\fpioa.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\plic.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\sysctl.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\uart.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\utils.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\bsp\sleep.c">
+      <Filter>src_test\bsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\riscvfunc\privilege.c">
+      <Filter>src_test\riscvfunc</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\riscvfunc\csr_define.c">
+      <Filter>src_test\riscvfunc</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\pwm.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\rtc.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\sha256.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\spi.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\timer.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\uarths.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\wdt.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\aes.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\apu.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\dvp.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\fft.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\gpio.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\gpiohs.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\i2c.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\riscvfunc\page_table_entry.c">
+      <Filter>src_test\riscvfunc</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\riscvfunc\syslog.c">
+      <Filter>src_test\riscvfunc</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\bsp\locks.c">
+      <Filter>src_test\bsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\riscvfunc\core.c">
+      <Filter>src_test\riscvfunc</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\trap\machine_exception.c">
+      <Filter>src_test\trap</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\trap\machine_interrupt.c">
+      <Filter>src_test\trap</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\startup\entry.c">
+      <Filter>src_test\startup</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\startup\machine_main.c">
+      <Filter>src_test\startup</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\startup\supervisor_main.c">
+      <Filter>src_test\startup</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\riscvfunc\page_table.c">
+      <Filter>src_test\riscvfunc</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\drivers\otp.c">
+      <Filter>src_test\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\trap\supervisor_exception.c">
+      <Filter>src_test\trap</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\trap\supervisor_interrupt.c">
+      <Filter>src_test\trap</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\trap\trap_common.c">
+      <Filter>src_test\trap</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\kernel\printk.c">
+      <Filter>src_test\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\kernel\panic.c">
+      <Filter>src_test\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\mm\memory.c">
+      <Filter>src_test\mm</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\kernel\sched.c">
+      <Filter>src_test\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\kernel\mktime.c">
+      <Filter>src_test\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\common.c">
+      <Filter>src_test</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\kernel\signal.c">
+      <Filter>src_test\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\kernel\exit.c">
+      <Filter>src_test\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\kernel\fork.c">
+      <Filter>src_test\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\kernel\sys.c">
+      <Filter>src_test\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\kernel\blk_drv\ll_rw_blk.c">
+      <Filter>src_test\kernel\blk_drv</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\kernel\blk_drv\ramdisk.c">
+      <Filter>src_test\kernel\blk_drv</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\kernel\chr_drv\serial.c">
+      <Filter>src_test\kernel\chr_drv</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\kernel\chr_drv\tty_io.c">
+      <Filter>src_test\kernel\chr_drv</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\kernel\chr_drv\tty_ioctl.c">
+      <Filter>src_test\kernel\chr_drv</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\fs\buffer.c">
+      <Filter>src_test\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\fs\bitmap.c">
+      <Filter>src_test\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\fs\truncate.c">
+      <Filter>src_test\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\fs\inode.c">
+      <Filter>src_test\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\fs\super.c">
+      <Filter>src_test\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\fs\namei.c">
+      <Filter>src_test\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\fs\file_table.c">
+      <Filter>src_test\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\fs\block_dev.c">
+      <Filter>src_test\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\fs\char_dev.c">
+      <Filter>src_test\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\fs\file_dev.c">
+      <Filter>src_test\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\fs\pipe.c">
+      <Filter>src_test\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\fs\read_write.c">
+      <Filter>src_test\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\fs\open.c">
+      <Filter>src_test\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\fs\exec.c">
+      <Filter>src_test\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\fs\fcntl.c">
+      <Filter>src_test\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\fs\ioctl.c">
+      <Filter>src_test\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\kernel\segment.c">
+      <Filter>src_test\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\fs\stat.c">
+      <Filter>src_test\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src_test\user\test\test_main.c">
+      <Filter>src_test\user\test</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\include\utime.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\a.out.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\const.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\ctype.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\errno.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\fcntl.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\signal.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\stdarg.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\stddef.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\string.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\termios.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\time.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\unistd.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\asm\io.h">
+      <Filter>src\include\asm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\asm\memory.h">
+      <Filter>src\include\asm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\asm\segment.h">
+      <Filter>src\include\asm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\asm\system.h">
+      <Filter>src\include\asm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\linux\config.h">
+      <Filter>src\include\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\linux\fdreg.h">
+      <Filter>src\include\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\linux\fs.h">
+      <Filter>src\include\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\linux\hdreg.h">
+      <Filter>src\include\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\linux\head.h">
+      <Filter>src\include\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\linux\kernel.h">
+      <Filter>src\include\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\linux\mm.h">
+      <Filter>src\include\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\linux\sched.h">
+      <Filter>src\include\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\linux\sys.h">
+      <Filter>src\include\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\linux\tty.h">
+      <Filter>src\include\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\sys\stat.h">
+      <Filter>src\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\sys\times.h">
+      <Filter>src\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\sys\types.h">
+      <Filter>src\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\sys\utsname.h">
+      <Filter>src\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\sys\wait.h">
+      <Filter>src\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\kernel\blk_drv\blk.h">
+      <Filter>src\kernel\blk_drv</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\bsp\include\encoding.h">
+      <Filter>src_test\bsp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\bsp\include\platform.h">
+      <Filter>src_test\bsp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\bsp\include\bsp.h">
+      <Filter>src_test\bsp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\bsp\include\atomic.h">
+      <Filter>src_test\bsp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\common.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\entry.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\math.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\machine\_arc4random.h">
+      <Filter>src_test\include\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\machine\_default_types.h">
+      <Filter>src_test\include\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\machine\_endian.h">
+      <Filter>src_test\include\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\machine\_time.h">
+      <Filter>src_test\include\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\machine\_types.h">
+      <Filter>src_test\include\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\machine\ansi.h">
+      <Filter>src_test\include\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\machine\endian.h">
+      <Filter>src_test\include\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\machine\fastmath.h">
+      <Filter>src_test\include\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\machine\ieeefp.h">
+      <Filter>src_test\include\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\machine\malloc.h">
+      <Filter>src_test\include\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\machine\param.h">
+      <Filter>src_test\include\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\machine\setjmp.h">
+      <Filter>src_test\include\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\machine\setjmp-dj.h">
+      <Filter>src_test\include\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\machine\syscall.h">
+      <Filter>src_test\include\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\machine\termios.h">
+      <Filter>src_test\include\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\machine\time.h">
+      <Filter>src_test\include\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\machine\types.h">
+      <Filter>src_test\include\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\sys\cdefs.h">
+      <Filter>src_test\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\sys\reent.h">
+      <Filter>src_test\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\_ansi.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\_newlib_version.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\newlib.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\sys\config.h">
+      <Filter>src_test\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\sys\features.h">
+      <Filter>src_test\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\stddef.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\sys\_types.h">
+      <Filter>src_test\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\stdbool.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\bsp\include\sleep.h">
+      <Filter>src_test\bsp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\drivers.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\string.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\strings.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\xlocale.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\sys\lock.h">
+      <Filter>src_test\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\sys\string.h">
+      <Filter>src_test\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\riscvfunc\include\privilege.h">
+      <Filter>src_test\riscvfunc\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\riscvfunc\include\riscvfunc.h">
+      <Filter>src_test\riscvfunc\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\riscvfunc\include\csr_define.h">
+      <Filter>src_test\riscvfunc\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\aes.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\apu.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\clint.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\dmac.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\dvp.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\fft.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\fpioa.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\gpio.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\gpio_common.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\gpiohs.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\i2c.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\io.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\plic.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\pwm.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\rtc.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\sha256.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\spi.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\sysctl.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\timer.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\uart.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\uarths.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\utils.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\wdt.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\time.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\riscvfunc\include\page_table_entry.h">
+      <Filter>src_test\riscvfunc\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\riscvfunc\include\syslog.h">
+      <Filter>src_test\riscvfunc\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\stdarg.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\riscvfunc\include\stdio.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\riscvfunc\include\core.h">
+      <Filter>src_test\riscvfunc\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\riscvfunc\include\page_table.h">
+      <Filter>src_test\riscvfunc\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\drivers\include\otp.h">
+      <Filter>src_test\drivers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\trap\include\machine_exception.h">
+      <Filter>src_test\trap\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\trap\include\machine_interrupt.h">
+      <Filter>src_test\trap\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\trap\include\supervisor_exception.h">
+      <Filter>src_test\trap\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\trap\include\supervisor_interrupt.h">
+      <Filter>src_test\trap\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\trap\include\trap.h">
+      <Filter>src_test\trap\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\linux\kernel.h">
+      <Filter>src_test\include\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\linux\mm.h">
+      <Filter>src_test\include\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\linux\sched.h">
+      <Filter>src_test\include\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\sys\types.h">
+      <Filter>src_test\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\signal.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\linux\sys.h">
+      <Filter>src_test\include\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\errno.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\sys\wait.h">
+      <Filter>src_test\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\sys\times.h">
+      <Filter>src_test\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\sys\utsname.h">
+      <Filter>src_test\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\unistd.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\linux\fs.h">
+      <Filter>src_test\include\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\kernel\blk_drv\blk.h">
+      <Filter>src_test\kernel\blk_drv</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\linux\config.h">
+      <Filter>src_test\include\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\linux\tty.h">
+      <Filter>src_test\include\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\termios.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\ctype.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\sys\stat.h">
+      <Filter>src_test\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\a.out.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\fcntl.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\const.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\utime.h">
+      <Filter>src_test\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src_test\include\asm\segment.h">
+      <Filter>src_test\include\asm</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src_test\system.txt">
+      <Filter>src_test</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,947 @@
+﻿  make: Entering directory 'D:/����/��Ŀ/K210-Linux0.11-VS/src_test'
+  del *.o
+  ..\tools\bin\riscv64-unknown-elf-gcc.exe -Wall -O -fstrength-reduce  -nostdinc -fomit-frame-pointer -I include -mcmodel=medany -mabi=lp64f -march=rv64imafc -fno-common -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fno-zero-initialized-in-bss -ffast-math -fno-math-errno -fsingle-precision-constant -Os -ggdb -Wall -Wno-error=unused-function -Wno-error=unused-but-set-variable -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wno-multichar -Wextra -Werror=frame-larger-than=32768 -Wno-unused-parameter -Wno-sign-compare -Wno-error=missing-braces -Wno-error=return-type -Wno-error=pointer-sign -Wno-missing-braces -Wno-strict-aliasing -Wno-implicit-fallthrough -Wno-missing-field-initializers -Wno-int-to-pointer-cast -Wno-error=comment -Wno-error=logical-not-parentheses -Wno-error=duplicate-decl-specifier -Wno-error=parentheses -nostartfiles -static -I D:\Work\K210-Linux0.11-VS\src_test\include -I D:\Work\K210-Linux0.11-VS\src_test\bsp\include -I D:\Work\K210-Linux0.11-VS\src_test\drivers\include -c entry.c main.c interrupt.c exception.c startup.S
+  entry.c: In function 'entry':
+entry.c(60,9): warning GF0156036: variable 'ret' set but not used [-Wunused-but-set-variable]
+       int ret = 0;
+           ^~~
+  ../tools/bin/riscv64-unknown-elf-ld.exe -r -o rootdir.o entry.o main.o interrupt.o exception.o startup.o
+  del image.elf
+  ..\tools\bin\riscv64-unknown-elf-gcc.exe -Wall -O -fstrength-reduce  -nostdinc -fomit-frame-pointer -I include -mcmodel=medany -mabi=lp64f -march=rv64imafc -fno-common -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fno-zero-initialized-in-bss -ffast-math -fno-math-errno -fsingle-precision-constant -Os -ggdb -Wall -Wno-error=unused-function -Wno-error=unused-but-set-variable -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wno-multichar -Wextra -Werror=frame-larger-than=32768 -Wno-unused-parameter -Wno-sign-compare -Wno-error=missing-braces -Wno-error=return-type -Wno-error=pointer-sign -Wno-missing-braces -Wno-strict-aliasing -Wno-implicit-fallthrough -Wno-missing-field-initializers -Wno-int-to-pointer-cast -Wno-error=comment -Wno-error=logical-not-parentheses -Wno-error=duplicate-decl-specifier -Wno-error=parentheses -nostartfiles -static -I D:\Work\K210-Linux0.11-VS\src_test\include -I D:\Work\K210-Linux0.11-VS\src_test\bsp\include -I D:\Work\K210-Linux0.11-VS\src_test\drivers\include -Wl,--gc-sections -Wl,-static -Wl,-EL -Wl,--no-relax -Wl,-T linker.ld -Wl,-M -o image.elf rootdir.o bsp/bsp.o drivers/drivers.o ..\tools\riscv64-unknown-elf\lib\libm.a
+  Archive member included to satisfy reference by file (symbol)
+  
+  ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_ceil.o)
+                                drivers/drivers.o (ceil)
+  ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_floor.o)
+                                drivers/drivers.o (floor)
+  ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_rint.o)
+                                drivers/drivers.o (rint)
+  d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(adddf3.o)
+                                ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_ceil.o) (__adddf3)
+  d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(divdf3.o)
+                                drivers/drivers.o (__divdf3)
+  d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(gedf2.o)
+                                drivers/drivers.o (__gedf2)
+  d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(ledf2.o)
+                                drivers/drivers.o (__ltdf2)
+  d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(muldf3.o)
+                                drivers/drivers.o (__muldf3)
+  d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(subdf3.o)
+                                drivers/drivers.o (__subdf3)
+  d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixdfsi.o)
+                                drivers/drivers.o (__fixdfsi)
+  d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixunsdfsi.o)
+                                drivers/drivers.o (__fixunsdfsi)
+  d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatsidf.o)
+                                drivers/drivers.o (__floatsidf)
+  d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatunsidf.o)
+                                drivers/drivers.o (__floatunsidf)
+  d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatdidf.o)
+                                drivers/drivers.o (__floatdidf)
+  d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clzsi2.o)
+                                d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(adddf3.o) (__clzdi2)
+  d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clz.o)
+                                d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clzsi2.o) (__clz_tab)
+  d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib\libc.a(lib_a-memset.o)
+                                drivers/drivers.o (memset)
+  
+  Discarded input sections
+  
+   .text          0x0000000000000000        0x0 rootdir.o
+   .text.core_enable
+                  0x0000000000000000       0x28 rootdir.o
+   .text.register_core1
+                  0x0000000000000000       0x2c rootdir.o
+   .data          0x0000000000000000        0x0 rootdir.o
+   .bss           0x0000000000000000        0x0 rootdir.o
+   .text          0x0000000000000000        0x0 bsp/bsp.o
+   .text.sleep    0x0000000000000000       0x14 bsp/bsp.o
+   .data          0x0000000000000000        0x0 bsp/bsp.o
+   .bss           0x0000000000000000        0x0 bsp/bsp.o
+   .text          0x0000000000000000        0x0 drivers/drivers.o
+   .text.set_bit  0x0000000000000000        0xe drivers/drivers.o
+   .text.set_bit_offset
+                  0x0000000000000000       0x1a drivers/drivers.o
+   .text.set_gpio_bit
+                  0x0000000000000000        0xe drivers/drivers.o
+   .text.get_bit  0x0000000000000000       0x12 drivers/drivers.o
+   .text.get_gpio_bit
+                  0x0000000000000000       0x14 drivers/drivers.o
+   .text.fpioa_get_io
+                  0x0000000000000000       0x20 drivers/drivers.o
+   .text.fpioa_set_io
+                  0x0000000000000000       0x20 drivers/drivers.o
+   .text.fpioa_set_io_pull
+                  0x0000000000000000       0x64 drivers/drivers.o
+   .text.fpioa_get_io_pull
+                  0x0000000000000000       0x34 drivers/drivers.o
+   .text.fpioa_set_io_driving
+                  0x0000000000000000       0x38 drivers/drivers.o
+   .text.fpioa_set_sl
+                  0x0000000000000000       0x2e drivers/drivers.o
+   .text.fpioa_set_st
+                  0x0000000000000000       0x2e drivers/drivers.o
+   .text.fpioa_set_oe_inv
+                  0x0000000000000000       0x2c drivers/drivers.o
+   .text.fpioa_get_io_driving
+                  0x0000000000000000       0x1e drivers/drivers.o
+   .text.fpioa_set_tie_enable
+                  0x0000000000000000       0x3e drivers/drivers.o
+   .text.fpioa_set_tie_value
+                  0x0000000000000000       0x3e drivers/drivers.o
+   .text.fpioa_get_io_by_function
+                  0x0000000000000000       0x26 drivers/drivers.o
+   .text.plic_irq_enable
+                  0x0000000000000000       0x32 drivers/drivers.o
+   .text.plic_irq_disable
+                  0x0000000000000000       0x36 drivers/drivers.o
+   .text.plic_set_priority
+                  0x0000000000000000       0x1c drivers/drivers.o
+   .text.plic_get_priority
+                  0x0000000000000000       0x1c drivers/drivers.o
+   .text.plic_irq_claim
+                  0x0000000000000000       0x16 drivers/drivers.o
+   .text.plic_irq_complete
+                  0x0000000000000000       0x16 drivers/drivers.o
+   .text.plic_irq_register
+                  0x0000000000000000       0x24 drivers/drivers.o
+   .text.plic_irq_unregister
+                  0x0000000000000000       0x28 drivers/drivers.o
+   .text.plic_get_instance
+                  0x0000000000000000        0xa drivers/drivers.o
+   .text.handle_irq_m_ext
+                  0x0000000000000000       0xac drivers/drivers.o
+   .text.clint_get_time
+                  0x0000000000000000        0xa drivers/drivers.o
+   .text.clint_timer_init
+                  0x0000000000000000       0x36 drivers/drivers.o
+   .text.clint_timer_stop
+                  0x0000000000000000        0xc drivers/drivers.o
+   .text.clint_timer_get_freq
+                  0x0000000000000000       0x20 drivers/drivers.o
+   .text.clint_timer_get_interval
+                  0x0000000000000000       0x1a drivers/drivers.o
+   .text.clint_timer_set_interval
+                  0x0000000000000000       0x4a drivers/drivers.o
+   .text.clint_timer_start
+                  0x0000000000000000       0x72 drivers/drivers.o
+   .text.clint_timer_get_single_shot
+                  0x0000000000000000       0x1a drivers/drivers.o
+   .text.clint_timer_set_single_shot
+                  0x0000000000000000       0x1c drivers/drivers.o
+   .text.clint_timer_register
+                  0x0000000000000000       0x1e drivers/drivers.o
+   .text.clint_timer_unregister
+                  0x0000000000000000       0x22 drivers/drivers.o
+   .text.clint_ipi_init
+                  0x0000000000000000       0x22 drivers/drivers.o
+   .text.clint_ipi_enable
+                  0x0000000000000000        0xc drivers/drivers.o
+   .text.clint_ipi_disable
+                  0x0000000000000000        0x8 drivers/drivers.o
+   .text.clint_ipi_send
+                  0x0000000000000000       0x20 drivers/drivers.o
+   .text.clint_ipi_clear
+                  0x0000000000000000       0x24 drivers/drivers.o
+   .text.clint_ipi_register
+                  0x0000000000000000       0x1a drivers/drivers.o
+   .text.clint_ipi_unregister
+                  0x0000000000000000       0x1e drivers/drivers.o
+   .text.handle_irq_m_timer
+                  0x0000000000000000       0x88 drivers/drivers.o
+   .text.handle_irq_m_soft
+                  0x0000000000000000       0x52 drivers/drivers.o
+   .text.dmac_enable
+                  0x0000000000000000       0x18 drivers/drivers.o
+   .text.dmac_irq_callback
+                  0x0000000000000000       0x2e drivers/drivers.o
+   .text.dmac_read_id
+                  0x0000000000000000        0x8 drivers/drivers.o
+   .text.dmac_read_version
+                  0x0000000000000000        0x8 drivers/drivers.o
+   .text.dmac_read_channel_id
+                  0x0000000000000000       0x12 drivers/drivers.o
+   .text.dmac_disable
+                  0x0000000000000000        0xc drivers/drivers.o
+   .text.src_transaction_complete_int_enable
+                  0x0000000000000000       0x1a drivers/drivers.o
+   .text.dmac_channel_enable
+                  0x0000000000000000       0x70 drivers/drivers.o
+   .text.dmac_channel_disable
+                  0x0000000000000000       0x76 drivers/drivers.o
+   .text.dmac_check_channel_busy
+                  0x0000000000000000       0x50 drivers/drivers.o
+   .text.dmac_set_list_master_select
+                  0x0000000000000000       0x6a drivers/drivers.o
+   .text.dmac_enable_common_interrupt_status
+                  0x0000000000000000       0x18 drivers/drivers.o
+   .text.dmac_enable_common_interrupt_signal
+                  0x0000000000000000       0x18 drivers/drivers.o
+   .text.dmac_disable_channel_interrupt
+                  0x0000000000000000       0x12 drivers/drivers.o
+   .text.dmac_set_channel_config
+                  0x0000000000000000      0x1aa drivers/drivers.o
+   .text.dmac_set_channel_param
+                  0x0000000000000000      0x154 drivers/drivers.o
+   .text.dmac_get_channel_config
+                  0x0000000000000000       0xee drivers/drivers.o
+   .text.dmac_set_address
+                  0x0000000000000000       0x16 drivers/drivers.o
+   .text.dmac_set_block_ts
+                  0x0000000000000000       0x1e drivers/drivers.o
+   .text.dmac_source_control
+                  0x0000000000000000       0x3a drivers/drivers.o
+   .text.dmac_master_control
+                  0x0000000000000000       0x42 drivers/drivers.o
+   .text.dmac_set_source_transfer_control
+                  0x0000000000000000       0x2a drivers/drivers.o
+   .text.dmac_set_destination_transfer_control
+                  0x0000000000000000       0x2c drivers/drivers.o
+   .text.dmac_set_flow_control
+                  0x0000000000000000       0x24 drivers/drivers.o
+   .text.dmac_set_linked_list_addr_point
+                  0x0000000000000000       0x1e drivers/drivers.o
+   .text.dmac_init
+                  0x0000000000000000       0x58 drivers/drivers.o
+   .text.list_add_tail
+                  0x0000000000000000        0xc drivers/drivers.o
+   .text.INIT_LIST_HEAD
+                  0x0000000000000000        0x6 drivers/drivers.o
+   .text.dmac_link_list_item
+                  0x0000000000000000      0x15c drivers/drivers.o
+   .text.dmac_update_shandow_register
+                  0x0000000000000000       0xfa drivers/drivers.o
+   .text.dmac_set_shadow_invalid_flag
+                  0x0000000000000000       0x2c drivers/drivers.o
+   .text.dmac_is_done
+                  0x0000000000000000       0x16 drivers/drivers.o
+   .text.dmac_is_idle
+                  0x0000000000000000       0x12 drivers/drivers.o
+   .text.dmac_wait_idle
+                  0x0000000000000000       0x2e drivers/drivers.o
+   .text.dmac_set_single_mode
+                  0x0000000000000000       0x72 drivers/drivers.o
+   .text.dmac_wait_done
+                  0x0000000000000000        0x8 drivers/drivers.o
+   .text.dmac_set_src_dest_length
+                  0x0000000000000000       0x52 drivers/drivers.o
+   .text.dmac_irq_register
+                  0x0000000000000000       0x72 drivers/drivers.o
+   .text.dmac_irq_unregister
+                  0x0000000000000000       0x34 drivers/drivers.o
+   .text.uart_irq_callback
+                  0x0000000000000000       0x56 drivers/drivers.o
+   .text.uart_dma_irq
+                  0x0000000000000000       0x52 drivers/drivers.o
+   .text.uart_receive_data
+                  0x0000000000000000       0x32 drivers/drivers.o
+   .text.uart_set_send_trigger
+                  0x0000000000000000       0x18 drivers/drivers.o
+   .text.uart_set_receive_trigger
+                  0x0000000000000000       0x18 drivers/drivers.o
+   .text.uart_irq_register
+                  0x0000000000000000       0xca drivers/drivers.o
+   .text.uart_irq_unregister
+                  0x0000000000000000       0x7a drivers/drivers.o
+   .text.uart_handle_data_dma
+                  0x0000000000000000      0x1d2 drivers/drivers.o
+   .text.uart_set_work_mode
+                  0x0000000000000000       0x82 drivers/drivers.o
+   .text.uart_set_rede_polarity
+                  0x0000000000000000       0x4a drivers/drivers.o
+   .text.uart_set_rede_enable
+                  0x0000000000000000       0x2a drivers/drivers.o
+   .text.uart_set_det
+                  0x0000000000000000       0xa0 drivers/drivers.o
+   .text.uart_set_tat
+                  0x0000000000000000       0xa4 drivers/drivers.o
+   .text.sysctl_pll_enable.part.1
+                  0x0000000000000000       0x3e drivers/drivers.o
+   .text.sysctl_get_git_id
+                  0x0000000000000000        0xa drivers/drivers.o
+   .text.sysctl_get_freq
+                  0x0000000000000000        0xa drivers/drivers.o
+   .text.sysctl_clock_disable
+                  0x0000000000000000       0x22 drivers/drivers.o
+   .text.sysctl_clock_set_threshold
+                  0x0000000000000000      0x274 drivers/drivers.o
+   .text.sysctl_clock_get_threshold
+                  0x0000000000000000      0x134 drivers/drivers.o
+   .text.sysctl_clock_set_clock_select
+                  0x0000000000000000       0xf0 drivers/drivers.o
+   .text.sysctl_clock_get_clock_select
+                  0x0000000000000000       0x8a drivers/drivers.o
+   .text.sysctl_pll_enable
+                  0x0000000000000000       0x96 drivers/drivers.o
+   .text.sysctl_pll_disable
+                  0x0000000000000000       0x6a drivers/drivers.o
+   .text.sysctl_dma_select
+                  0x0000000000000000       0xcc drivers/drivers.o
+   .text.sysctl_pll_fast_enable_pll
+                  0x0000000000000000       0xd4 drivers/drivers.o
+   .text.sysctl_set_spi0_dvp_data
+                  0x0000000000000000       0x18 drivers/drivers.o
+   .text.sysctl_set_power_mode
+                  0x0000000000000000       0x1c drivers/drivers.o
+   .text.sysctl_cpu_get_freq
+                  0x0000000000000000        0xc drivers/drivers.o
+   .text.sysctl_cpu_set_freq
+                  0x0000000000000000       0x38 drivers/drivers.o
+   .text.sysctl_disable_irq
+                  0x0000000000000000       0x10 drivers/drivers.o
+   .text.sysctl_get_time_us
+                  0x0000000000000000       0x30 drivers/drivers.o
+   .sdata2.CSWTCH.14
+                  0x0000000000000000        0x3 drivers/drivers.o
+   .sdata2.CSWTCH.15
+                  0x0000000000000000        0x3 drivers/drivers.o
+   .sdata2.fpioa  0x0000000000000000        0x8 drivers/drivers.o
+   .sdata2.plic   0x0000000000000000        0x8 drivers/drivers.o
+   .sdata2.clint  0x0000000000000000        0x8 drivers/drivers.o
+   .rodata.dmac_channel_enable
+                  0x0000000000000000       0x18 drivers/drivers.o
+   .rodata.dmac_channel_disable
+                  0x0000000000000000       0x18 drivers/drivers.o
+   .rodata.dmac_check_channel_busy
+                  0x0000000000000000       0x18 drivers/drivers.o
+   .sdata2.dmac   0x0000000000000000        0x8 drivers/drivers.o
+   .rodata.uart_set_det.cst4
+                  0x0000000000000000        0x8 drivers/drivers.o
+   .rodata.sysctl_clock_set_threshold
+                  0x0000000000000000       0x6c drivers/drivers.o
+   .rodata.sysctl_clock_get_threshold
+                  0x0000000000000000       0x6c drivers/drivers.o
+   .rodata.sysctl_clock_set_clock_select
+                  0x0000000000000000       0x28 drivers/drivers.o
+   .rodata.sysctl_clock_get_clock_select
+                  0x0000000000000000       0x28 drivers/drivers.o
+   .rodata.sysctl_dma_select
+                  0x0000000000000000       0x18 drivers/drivers.o
+   .sdata2.get_select_aclk
+                  0x0000000000000000        0x2 drivers/drivers.o
+   .sdata2.get_source_aclk
+                  0x0000000000000000        0x2 drivers/drivers.o
+   .sdata2.sysctl
+                  0x0000000000000000        0x8 drivers/drivers.o
+   .data          0x0000000000000000        0x0 drivers/drivers.o
+   .sdata.cpu_freq
+                  0x0000000000000000        0x4 drivers/drivers.o
+   .bss           0x0000000000000000        0x0 drivers/drivers.o
+   .bss.clint_ipi_instance
+                  0x0000000000000000       0x20 drivers/drivers.o
+   .bss.clint_timer_instance
+                  0x0000000000000000       0x50 drivers/drivers.o
+   .bss.dmac_context
+                  0x0000000000000000       0x90 drivers/drivers.o
+   .bss.g_uart_instance
+                  0x0000000000000000       0x78 drivers/drivers.o
+   .bss.g_uart_recv_instance_dma
+                  0x0000000000000000       0x78 drivers/drivers.o
+   .bss.g_uart_send_instance_dma
+                  0x0000000000000000       0x78 drivers/drivers.o
+   .bss.uart_recv_dma_instance
+                  0x0000000000000000       0xa8 drivers/drivers.o
+   .bss.uart_send_dma_instance
+                  0x0000000000000000       0xa8 drivers/drivers.o
+   .text          0x0000000000000000        0x0 ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_ceil.o)
+   .data          0x0000000000000000        0x0 ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_ceil.o)
+   .bss           0x0000000000000000        0x0 ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_ceil.o)
+   .text          0x0000000000000000        0x0 ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_floor.o)
+   .data          0x0000000000000000        0x0 ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_floor.o)
+   .bss           0x0000000000000000        0x0 ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_floor.o)
+   .text          0x0000000000000000        0x0 ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_rint.o)
+   .data          0x0000000000000000        0x0 ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_rint.o)
+   .bss           0x0000000000000000        0x0 ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_rint.o)
+   .text          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(adddf3.o)
+   .data          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(adddf3.o)
+   .bss           0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(adddf3.o)
+   .text          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(divdf3.o)
+   .data          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(divdf3.o)
+   .bss           0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(divdf3.o)
+   .text          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(gedf2.o)
+   .data          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(gedf2.o)
+   .bss           0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(gedf2.o)
+   .text          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(ledf2.o)
+   .data          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(ledf2.o)
+   .bss           0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(ledf2.o)
+   .text          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(muldf3.o)
+   .data          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(muldf3.o)
+   .bss           0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(muldf3.o)
+   .text          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(subdf3.o)
+   .data          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(subdf3.o)
+   .bss           0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(subdf3.o)
+   .text          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixdfsi.o)
+   .data          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixdfsi.o)
+   .bss           0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixdfsi.o)
+   .text          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixunsdfsi.o)
+   .data          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixunsdfsi.o)
+   .bss           0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixunsdfsi.o)
+   .text          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatsidf.o)
+   .data          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatsidf.o)
+   .bss           0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatsidf.o)
+   .text          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatunsidf.o)
+   .data          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatunsidf.o)
+   .bss           0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatunsidf.o)
+   .text          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatdidf.o)
+   .data          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatdidf.o)
+   .bss           0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatdidf.o)
+   .text          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clzsi2.o)
+   .data          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clzsi2.o)
+   .bss           0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clzsi2.o)
+   .text          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clz.o)
+   .data          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clz.o)
+   .bss           0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clz.o)
+   .data          0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib\libc.a(lib_a-memset.o)
+   .bss           0x0000000000000000        0x0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib\libc.a(lib_a-memset.o)
+  
+  Memory Configuration
+  
+  Name             Origin             Length             Attributes
+  ram              0x0000000080000000 0x0000000000600000 axw !rl
+  ram_nocache      0x0000000040000000 0x0000000000600000 axw !rl
+  *default*        0x0000000000000000 0xffffffffffffffff
+  
+  Linker script and memory map
+  
+                  [!provide]                        PROVIDE (_rom_start = ORIGIN (rom))
+                  [!provide]                        PROVIDE (_rom_end = (ORIGIN (rom) + LENGTH (rom)))
+                  [!provide]                        PROVIDE (_ram_start = ORIGIN (ram))
+                  [!provide]                        PROVIDE (_ram_end = (ORIGIN (ram) + LENGTH (ram)))
+                  [!provide]                        PROVIDE (_io_start = 0x40000000)
+                  [!provide]                        PROVIDE (_io_end = (_io_start + LENGTH (ram)))
+                  [!provide]                        PROVIDE (_stack_size = 0x8000)
+  
+  .text           0x0000000080000000     0x3448
+                  [!provide]                        PROVIDE (_text = ABSOLUTE (.))
+   *(.text.start)
+   .text.start    0x0000000080000000      0x2c4 rootdir.o
+                  0x0000000080000000                _start
+                  0x0000000080000008                g_wake_up
+   *(.text.unlikely .text.unlikely.*)
+   *(.text.startup .text.startup.*)
+   .text.startup.main
+                  0x00000000800002c4       0xac rootdir.o
+                  0x00000000800002c4                main
+   *(.text .text.*)
+   .text.thread_entry
+                  0x0000000080000370       0x12 rootdir.o
+                  0x0000000080000370                thread_entry
+   .text.init_bss
+                  0x0000000080000382       0x1e rootdir.o
+                  0x0000000080000382                init_bss
+   .text.entry    0x00000000800003a0       0x9a rootdir.o
+                  0x00000000800003a0                entry
+   .text.read_serial
+                  0x000000008000043a       0x28 rootdir.o
+                  0x000000008000043a                read_serial
+   .text.interrupt_handler
+                  0x0000000080000462        0x4 rootdir.o
+                  0x0000000080000462                interrupt_handler
+   .text.exception_handler
+                  0x0000000080000466        0x4 rootdir.o
+                  0x0000000080000466                exception_handler
+   .text.usleep   0x000000008000046a       0x42 bsp/bsp.o
+                  0x000000008000046a                usleep
+   .text.msleep   0x00000000800004ac       0x10 bsp/bsp.o
+                  0x00000000800004ac                msleep
+   .text.fpioa_init
+                  0x00000000800004bc       0xa8 drivers/drivers.o
+                  0x00000000800004bc                fpioa_init
+   .text.fpioa_set_function_raw
+                  0x0000000080000564       0x3e drivers/drivers.o
+                  0x0000000080000564                fpioa_set_function_raw
+   .text.fpioa_set_function
+                  0x00000000800005a2       0x86 drivers/drivers.o
+                  0x00000000800005a2                fpioa_set_function
+   .text.plic_init
+                  0x0000000080000628       0xae drivers/drivers.o
+                  0x0000000080000628                plic_init
+   .text.uart_send_data
+                  0x00000000800006d6       0x56 drivers/drivers.o
+                  0x00000000800006d6                uart_send_data
+   .text.uart_configure
+                  0x000000008000072c       0xf6 drivers/drivers.o
+                  0x000000008000072c                uart_config
+                  0x000000008000072c                uart_configure
+   .text.uart_init
+                  0x0000000080000822       0x24 drivers/drivers.o
+                  0x0000000080000822                uart_init
+   .text.uart_debug_init
+                  0x0000000080000846       0x6a drivers/drivers.o
+                  0x0000000080000846                uart_debug_init
+   .text.sysctl_reset_ctl
+                  0x00000000800008b0      0x1de drivers/drivers.o
+   .text.sysctl_clock_device_en
+                  0x0000000080000a8e      0x282 drivers/drivers.o
+   .text.sysctl_pll_is_lock.part.0
+                  0x0000000080000d10       0x3c drivers/drivers.o
+   .text.sysctl_pll_clear_slip
+                  0x0000000080000d4c       0x50 drivers/drivers.o
+   .text.sysctl_reset
+                  0x0000000080000d9c       0x2e drivers/drivers.o
+                  0x0000000080000d9c                sysctl_reset
+   .text.sysctl_clock_enable
+                  0x0000000080000dca       0x6e drivers/drivers.o
+                  0x0000000080000dca                sysctl_clock_enable
+   .text.sysctl_clock_source_get_freq
+                  0x0000000080000e38       0x4a drivers/drivers.o
+                  0x0000000080000e38                sysctl_clock_source_get_freq
+   .text.sysctl_pll_get_freq.part.4
+                  0x0000000080000e82      0x124 drivers/drivers.o
+   .text.sysctl_clock_source_get_freq.part.3
+                  0x0000000080000fa6        0xa drivers/drivers.o
+   .text.sysctl_clock_get_freq.part.2
+                  0x0000000080000fb0      0x2e0 drivers/drivers.o
+   .text.sysctl_pll_get_freq
+                  0x0000000080001290       0x12 drivers/drivers.o
+                  0x0000000080001290                sysctl_pll_get_freq
+   .text.sysctl_pll_source_set_freq.part.5
+                  0x00000000800012a2      0x52a drivers/drivers.o
+   .text.sysctl_clock_get_freq
+                  0x00000000800017cc        0x8 drivers/drivers.o
+                  0x00000000800017cc                sysctl_clock_get_freq
+   .text.sysctl_pll_set_freq
+                  0x00000000800017d4      0x108 drivers/drivers.o
+                  0x00000000800017d4                sysctl_pll_set_freq
+   .text.sysctl_enable_irq
+                  0x00000000800018dc       0x10 drivers/drivers.o
+                  0x00000000800018dc                sysctl_enable_irq
+   .text.sysctl_get_reset_status
+                  0x00000000800018ec       0x52 drivers/drivers.o
+                  0x00000000800018ec                sysctl_get_reset_status
+   .text.ceil     0x000000008000193e      0x160 ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_ceil.o)
+                  0x000000008000193e                ceil
+   .text.floor    0x0000000080001a9e      0x168 ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_floor.o)
+                  0x0000000080001a9e                floor
+   .text.rint     0x0000000080001c06      0x18c ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_rint.o)
+                  0x0000000080001c06                rint
+   .text.__adddf3
+                  0x0000000080001d92      0x58e d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(adddf3.o)
+                  0x0000000080001d92                __adddf3
+   .text.__divdf3
+                  0x0000000080002320      0x3ae d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(divdf3.o)
+                  0x0000000080002320                __divdf3
+   .text.__gedf2  0x00000000800026ce       0x88 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(gedf2.o)
+                  0x00000000800026ce                __gedf2
+                  0x00000000800026ce                __gtdf2
+   .text.__ledf2  0x0000000080002756       0x88 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(ledf2.o)
+                  0x0000000080002756                __ledf2
+                  0x0000000080002756                __ltdf2
+   .text.__muldf3
+                  0x00000000800027de      0x37c d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(muldf3.o)
+                  0x00000000800027de                __muldf3
+   .text.__subdf3
+                  0x0000000080002b5a      0x57a d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(subdf3.o)
+                  0x0000000080002b5a                __subdf3
+   .text.__fixdfsi
+                  0x00000000800030d4       0x84 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixdfsi.o)
+                  0x00000000800030d4                __fixdfsi
+   .text.__fixunsdfsi
+                  0x0000000080003158       0x66 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixunsdfsi.o)
+                  0x0000000080003158                __fixunsdfsi
+   .text.__floatsidf
+                  0x00000000800031be       0x62 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatsidf.o)
+                  0x00000000800031be                __floatsidf
+   .text.__floatunsidf
+                  0x0000000080003220       0x46 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatunsidf.o)
+                  0x0000000080003220                __floatunsidf
+   .text.__floatdidf
+                  0x0000000080003266      0x108 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatdidf.o)
+                  0x0000000080003266                __floatdidf
+   .text.__clzdi2
+                  0x000000008000336e       0x30 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clzsi2.o)
+                  0x000000008000336e                __clzdi2
+   .text          0x000000008000339e       0xaa d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib\libc.a(lib_a-memset.o)
+                  0x000000008000339e                memset
+   *(.gnu.linkonce.t.*)
+                  0x0000000080003448                . = ALIGN (0x8)
+   *fill*         0x0000000080003448        0x0 
+                  [!provide]                        PROVIDE (_etext = ABSOLUTE (.))
+  
+  .rodata         0x0000000080003448      0x7d8
+   *(.rdata)
+   *(.rodata .rodata.*)
+   .rodata.function_config
+                  0x0000000080003448      0x400 drivers/drivers.o
+   .rodata.uart   0x0000000080003848       0x18 drivers/drivers.o
+                  0x0000000080003848                uart
+   .rodata.sysctl_reset_ctl
+                  0x0000000080003860       0x74 drivers/drivers.o
+   .rodata.sysctl_clock_device_en
+                  0x00000000800038d4       0x98 drivers/drivers.o
+   .rodata.sysctl_clock_source_get_freq
+                  0x000000008000396c       0x14 drivers/drivers.o
+   .rodata.sysctl_clock_get_freq.part.2
+                  0x0000000080003980       0xac drivers/drivers.o
+   *fill*         0x0000000080003a2c        0x4 
+   .rodata.CSWTCH.33
+                  0x0000000080003a30       0x18 drivers/drivers.o
+   .rodata.sysctl_pll_source_set_freq.part.5.cst8
+                  0x0000000080003a48       0x48 drivers/drivers.o
+   .rodata.ceil.cst8
+                  0x0000000080003a90        0x8 ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_ceil.o)
+   .rodata.floor.cst8
+                  0x0000000080003a98        0x8 ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_floor.o)
+   .rodata.TWO52  0x0000000080003a98       0x10 ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_rint.o)
+   .rodata.__divdf3
+                  0x0000000080003aa8       0x3c d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(divdf3.o)
+   .rodata.__muldf3
+                  0x0000000080003ae4       0x3c d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(muldf3.o)
+   .rodata.__clz_tab
+                  0x0000000080003b20      0x100 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clz.o)
+                  0x0000000080003b20                __clz_tab
+   *(.gnu.linkonce.r.*)
+  
+  .sdata2.CSWTCH.9
+                  0x0000000080003c20        0x3
+   .sdata2.CSWTCH.9
+                  0x0000000080003c20        0x3 drivers/drivers.o
+  
+  .sdata2.get_select_pll2
+                  0x0000000080003c28        0x3
+   .sdata2.get_select_pll2
+                  0x0000000080003c28        0x3 drivers/drivers.o
+                  0x0000000080003c28                get_select_pll2
+  
+  .sdata2.get_source_pll2
+                  0x0000000080003c30        0x3
+   .sdata2.get_source_pll2
+                  0x0000000080003c30        0x3 drivers/drivers.o
+                  0x0000000080003c30                get_source_pll2
+  
+  .rela.dyn       0x0000000080003c38        0x0
+   .rela.text.init_bss
+                  0x0000000080003c38        0x0 rootdir.o
+   .rela.text.start
+                  0x0000000080003c38        0x0 rootdir.o
+                  0x0000000080003c38                . = ALIGN (0x8)
+  
+  .eh_frame       0x0000000080003c33        0x5
+   *(.eh_frame)
+   *(.eh_frame.*)
+                  0x0000000080003c38                . = ALIGN (0x8)
+   *fill*         0x0000000080003c33        0x5 
+  
+  .gnu_extab
+   *(.gnu_extab)
+  
+  .gcc_except_table
+   *(.gcc_except_table .gcc_except_table.*)
+  
+  .exception_ranges
+   *(.exception_ranges .exception_ranges*)
+  
+  .preinit_array  0x0000000080003c38        0x0
+                  [!provide]                        PROVIDE (__preinit_array_start = .)
+   *(.preinit_array)
+                  [!provide]                        PROVIDE (__preinit_array_end = .)
+  
+  .init_array     0x0000000080003c38        0x0
+                  [!provide]                        PROVIDE (__init_array_start = .)
+   *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+   *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                  [!provide]                        PROVIDE (__init_array_end = .)
+  
+  .fini_array     0x0000000080003c38        0x0
+                  [!provide]                        PROVIDE (__fini_array_start = .)
+   *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+   *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                  [!provide]                        PROVIDE (__fini_array_end = .)
+  
+  .ctors
+   *crtbegin.o(.ctors)
+   *crtbegin?.o(.ctors)
+   *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+   *(SORT_BY_NAME(.ctors.*))
+   *(.ctors)
+  
+  .dtors
+   *crtbegin.o(.dtors)
+   *crtbegin?.o(.dtors)
+   *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+   *(SORT_BY_NAME(.dtors.*))
+   *(.dtors)
+                  0x0000000080003c38                . = ALIGN (0x8)
+  
+  .lalign         0x0000000080003c38        0x0
+                  0x0000000080003c38                . = ALIGN (0x8)
+                  [!provide]                        PROVIDE (_data_lma = .)
+  
+  .dalign         0x0000000080003c38        0x0
+                  0x0000000080003c38                . = ALIGN (0x8)
+                  [!provide]                        PROVIDE (_data = .)
+                  0x0000000080003c38                . = ALIGN (0x8)
+  
+  .data           0x0000000080003c38       0x48
+   *(.data .data.*)
+   *(.gnu.linkonce.d.*)
+                  0x0000000080003c38                . = ALIGN (0x8)
+                  0x0000000080004438                PROVIDE (__global_pointer$ = (ABSOLUTE (.) + 0x800))
+   *(.sdata .sdata.*)
+   .sdata.otp_read_inner
+                  0x0000000080003c38        0x8 rootdir.o
+                  0x0000000080003c38                otp_read_inner
+   .sdata.s_plic_priorities_init_flag.2518
+                  0x0000000080003c40        0x1 drivers/drivers.o
+   *fill*         0x0000000080003c41        0x3 
+   .sdata.g_write_count
+                  0x0000000080003c44        0x4 drivers/drivers.o
+                  0x0000000080003c44                g_write_count
+   .sdata.s_uart_debug_channel
+                  0x0000000080003c48        0x4 drivers/drivers.o
+   .sdata.s_reset_status.4583
+                  0x0000000080003c4c        0x4 drivers/drivers.o
+   *(.gnu.linkonce.s.*)
+                  0x0000000080003c50                . = ALIGN (0x8)
+   *(.srodata.cst16)
+   *(.srodata.cst8)
+   *(.srodata.cst4)
+   *(.srodata.cst2)
+   *(.srodata .srodata.*)
+                  0x0000000080003c80                . = ALIGN (0x40)
+   *fill*         0x0000000080003c50       0x30 
+                  [!provide]                        PROVIDE (_edata = ABSOLUTE (.))
+  
+  .bss            0x0000000080003c80      0x850
+                  0x0000000080003c80                PROVIDE (_bss = ABSOLUTE (.))
+   *(.sbss .sbss.*)
+   *(.gnu.linkonce.sb.*)
+   *(.scommon)
+   *(.bss .bss.*)
+   .bss.core1_instance
+                  0x0000000080003c80       0x10 rootdir.o
+                  0x0000000080003c80                core1_instance
+   .bss.plic_instance
+                  0x0000000080003c90      0x840 drivers/drivers.o
+   *(.gnu.linkonce.b.*)
+   *(COMMON)
+                  0x00000000800044d0                . = ALIGN (0x8)
+                  0x00000000800044d0                PROVIDE (_ebss = ABSOLUTE (.))
+                  [!provide]                        PROVIDE (_tls_data = ABSOLUTE (.))
+  
+  .tdata
+   *(.tdata.begin)
+   *(.tdata .tdata.*)
+   *(.gnu.linkonce.td.*)
+   *(.tdata.end)
+  
+  .tbss
+   *(.tbss .tbss.*)
+   *(.gnu.linkonce.tb.*)
+   *(.tbss.end)
+                  0x0000000080004500                . = ALIGN (0x40)
+                  0x0000000080004500                PROVIDE (_end = ABSOLUTE (.))
+                  [!provide]                        PROVIDE (_heap_start = (ABSOLUTE (.) + (_stack_size * 0x2)))
+                  [!provide]                        PROVIDE (_tp0 = ((_end + 0x3f) & 0xffffffffffffffc0))
+                  [!provide]                        PROVIDE (_tp1 = (_tp0 + _stack_size))
+                  [!provide]                        PROVIDE (_sp0 = (_tp0 + _stack_size))
+                  [!provide]                        PROVIDE (_sp1 = (_tp1 + _stack_size))
+                  [!provide]                        PROVIDE (_heap_end = _ram_end)
+  LOAD rootdir.o
+  LOAD bsp/bsp.o
+  LOAD drivers/drivers.o
+  LOAD ..\tools\riscv64-unknown-elf\lib\libm.a
+  LOAD d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a
+  START GROUP
+  LOAD d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib\libc.a
+  LOAD d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0/../../../../riscv64-unknown-elf/lib\libgloss.a
+  END GROUP
+  LOAD d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a
+  OUTPUT(image.elf elf64-littleriscv)
+  
+  .comment        0x0000000000000000       0x11
+   .comment       0x0000000000000000       0x11 rootdir.o
+                                           0x48 (size before relaxing)
+   .comment       0x0000000000000011       0x12 bsp/bsp.o
+   .comment       0x0000000000000011       0x7e drivers/drivers.o
+   .comment       0x0000000000000011       0x12 ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_ceil.o)
+   .comment       0x0000000000000011       0x12 ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_floor.o)
+   .comment       0x0000000000000011       0x12 ..\tools\riscv64-unknown-elf\lib\libm.a(lib_a-s_rint.o)
+   .comment       0x0000000000000011       0x12 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(adddf3.o)
+   .comment       0x0000000000000011       0x12 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(divdf3.o)
+   .comment       0x0000000000000011       0x12 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(gedf2.o)
+   .comment       0x0000000000000011       0x12 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(ledf2.o)
+   .comment       0x0000000000000011       0x12 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(muldf3.o)
+   .comment       0x0000000000000011       0x12 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(subdf3.o)
+   .comment       0x0000000000000011       0x12 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixdfsi.o)
+   .comment       0x0000000000000011       0x12 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixunsdfsi.o)
+   .comment       0x0000000000000011       0x12 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatsidf.o)
+   .comment       0x0000000000000011       0x12 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatunsidf.o)
+   .comment       0x0000000000000011       0x12 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatdidf.o)
+   .comment       0x0000000000000011       0x12 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clzsi2.o)
+   .comment       0x0000000000000011       0x12 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clz.o)
+  
+  .debug_aranges  0x0000000000000000      0xda0
+   .debug_aranges
+                  0x0000000000000000      0x140 rootdir.o
+   .debug_aranges
+                  0x0000000000000140       0x50 bsp/bsp.o
+   .debug_aranges
+                  0x0000000000000190      0x9b0 drivers/drivers.o
+   .debug_aranges
+                  0x0000000000000b40       0x30 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(adddf3.o)
+   .debug_aranges
+                  0x0000000000000b70       0x30 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(divdf3.o)
+   .debug_aranges
+                  0x0000000000000ba0       0x30 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(gedf2.o)
+   .debug_aranges
+                  0x0000000000000bd0       0x30 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(ledf2.o)
+   .debug_aranges
+                  0x0000000000000c00       0x30 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(muldf3.o)
+   .debug_aranges
+                  0x0000000000000c30       0x30 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(subdf3.o)
+   .debug_aranges
+                  0x0000000000000c60       0x30 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixdfsi.o)
+   .debug_aranges
+                  0x0000000000000c90       0x30 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixunsdfsi.o)
+   .debug_aranges
+                  0x0000000000000cc0       0x30 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatsidf.o)
+   .debug_aranges
+                  0x0000000000000cf0       0x30 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatunsidf.o)
+   .debug_aranges
+                  0x0000000000000d20       0x30 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatdidf.o)
+   .debug_aranges
+                  0x0000000000000d50       0x30 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clzsi2.o)
+   .debug_aranges
+                  0x0000000000000d80       0x20 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clz.o)
+  
+  .debug_info     0x0000000000000000    0x22146
+   .debug_info    0x0000000000000000     0x7209 rootdir.o
+   .debug_info    0x0000000000007209     0x2057 bsp/bsp.o
+   .debug_info    0x0000000000009260    0x1589e drivers/drivers.o
+   .debug_info    0x000000000001eafe      0x397 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(adddf3.o)
+   .debug_info    0x000000000001ee95      0x3e9 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(divdf3.o)
+   .debug_info    0x000000000001f27e      0x268 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(gedf2.o)
+   .debug_info    0x000000000001f4e6      0x268 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(ledf2.o)
+   .debug_info    0x000000000001f74e      0x3ef d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(muldf3.o)
+   .debug_info    0x000000000001fb3d      0x393 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(subdf3.o)
+   .debug_info    0x000000000001fed0      0x216 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixdfsi.o)
+   .debug_info    0x00000000000200e6      0x201 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixunsdfsi.o)
+   .debug_info    0x00000000000202e7      0x257 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatsidf.o)
+   .debug_info    0x000000000002053e      0x256 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatunsidf.o)
+   .debug_info    0x0000000000020794      0x287 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatdidf.o)
+   .debug_info    0x0000000000020a1b      0xbd0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clzsi2.o)
+   .debug_info    0x00000000000215eb      0xb5b d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clz.o)
+  
+  .debug_abbrev   0x0000000000000000     0x471e
+   .debug_abbrev  0x0000000000000000      0xd0c rootdir.o
+   .debug_abbrev  0x0000000000000d0c      0x324 bsp/bsp.o
+   .debug_abbrev  0x0000000000001030     0x227e drivers/drivers.o
+   .debug_abbrev  0x00000000000032ae      0x184 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(adddf3.o)
+   .debug_abbrev  0x0000000000003432      0x159 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(divdf3.o)
+   .debug_abbrev  0x000000000000358b      0x177 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(gedf2.o)
+   .debug_abbrev  0x0000000000003702      0x177 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(ledf2.o)
+   .debug_abbrev  0x0000000000003879      0x164 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(muldf3.o)
+   .debug_abbrev  0x00000000000039dd      0x184 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(subdf3.o)
+   .debug_abbrev  0x0000000000003b61      0x172 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixdfsi.o)
+   .debug_abbrev  0x0000000000003cd3      0x179 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixunsdfsi.o)
+   .debug_abbrev  0x0000000000003e4c      0x185 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatsidf.o)
+   .debug_abbrev  0x0000000000003fd1      0x17e d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatunsidf.o)
+   .debug_abbrev  0x000000000000414f      0x187 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatdidf.o)
+   .debug_abbrev  0x00000000000042d6      0x251 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clzsi2.o)
+   .debug_abbrev  0x0000000000004527      0x1f7 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clz.o)
+  
+  .debug_line     0x0000000000000000     0xdc75
+   .debug_line    0x0000000000000000      0xd9f rootdir.o
+   .debug_line    0x0000000000000d9f      0x218 bsp/bsp.o
+   .debug_line    0x0000000000000fb7     0x8a0b drivers/drivers.o
+   .debug_line    0x00000000000099c2      0xd70 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(adddf3.o)
+   .debug_line    0x000000000000a732      0x9bc d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(divdf3.o)
+   .debug_line    0x000000000000b0ee      0x2c5 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(gedf2.o)
+   .debug_line    0x000000000000b3b3      0x2c5 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(ledf2.o)
+   .debug_line    0x000000000000b678      0x8b1 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(muldf3.o)
+   .debug_line    0x000000000000bf29      0xd56 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(subdf3.o)
+   .debug_line    0x000000000000cc7f      0x281 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixdfsi.o)
+   .debug_line    0x000000000000cf00      0x214 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixunsdfsi.o)
+   .debug_line    0x000000000000d114      0x1fd d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatsidf.o)
+   .debug_line    0x000000000000d311      0x1e3 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatunsidf.o)
+   .debug_line    0x000000000000d4f4      0x373 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatdidf.o)
+   .debug_line    0x000000000000d867      0x246 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clzsi2.o)
+   .debug_line    0x000000000000daad      0x1c8 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clz.o)
+  
+  .debug_frame    0x0000000000000000     0x15e0
+   .debug_frame   0x0000000000000000      0x178 rootdir.o
+   .debug_frame   0x0000000000000178       0x70 bsp/bsp.o
+   .debug_frame   0x00000000000001e8     0x1128 drivers/drivers.o
+   .debug_frame   0x0000000000001310       0x48 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(adddf3.o)
+   .debug_frame   0x0000000000001358       0x58 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(divdf3.o)
+   .debug_frame   0x00000000000013b0       0x28 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(gedf2.o)
+   .debug_frame   0x00000000000013d8       0x28 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(ledf2.o)
+   .debug_frame   0x0000000000001400       0x58 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(muldf3.o)
+   .debug_frame   0x0000000000001458       0x48 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(subdf3.o)
+   .debug_frame   0x00000000000014a0       0x28 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixdfsi.o)
+   .debug_frame   0x00000000000014c8       0x28 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixunsdfsi.o)
+   .debug_frame   0x00000000000014f0       0x40 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatsidf.o)
+   .debug_frame   0x0000000000001530       0x40 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatunsidf.o)
+   .debug_frame   0x0000000000001570       0x48 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatdidf.o)
+   .debug_frame   0x00000000000015b8       0x28 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clzsi2.o)
+  
+  .debug_str      0x0000000000000000     0x6cce
+   .debug_str     0x0000000000000000     0x2c84 rootdir.o
+                                         0x684e (size before relaxing)
+   .debug_str     0x0000000000002c84      0x374 bsp/bsp.o
+                                         0x1852 (size before relaxing)
+   .debug_str     0x0000000000002ff8     0x343c drivers/drivers.o
+                                        0x1059a (size before relaxing)
+   .debug_str     0x0000000000006434      0x271 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(adddf3.o)
+                                          0x2e9 (size before relaxing)
+   .debug_str     0x00000000000066a5      0x16f d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(divdf3.o)
+                                          0x353 (size before relaxing)
+   .debug_str     0x0000000000006814       0x77 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(gedf2.o)
+                                          0x248 (size before relaxing)
+   .debug_str     0x000000000000688b       0x34 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(ledf2.o)
+                                          0x248 (size before relaxing)
+   .debug_str     0x00000000000068bf       0xa0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(muldf3.o)
+                                          0x316 (size before relaxing)
+   .debug_str     0x000000000000695f       0x36 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(subdf3.o)
+                                          0x2e9 (size before relaxing)
+   .debug_str     0x0000000000006995       0x4b d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixdfsi.o)
+                                          0x22b (size before relaxing)
+   .debug_str     0x00000000000069e0       0x3e d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixunsdfsi.o)
+                                          0x22a (size before relaxing)
+   .debug_str     0x0000000000006a1e       0x69 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatsidf.o)
+                                          0x2aa (size before relaxing)
+   .debug_str     0x0000000000006a87       0x40 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatunsidf.o)
+                                          0x2a7 (size before relaxing)
+   .debug_str     0x0000000000006ac7       0x44 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatdidf.o)
+                                          0x2b4 (size before relaxing)
+   .debug_str     0x0000000000006b0b      0x1c3 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clzsi2.o)
+                                          0x78d (size before relaxing)
+   .debug_str     0x0000000000006cce      0x770 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clz.o)
+  
+  .debug_loc      0x0000000000000000     0xf0d2
+   .debug_loc     0x0000000000000000      0x2d9 rootdir.o
+   .debug_loc     0x00000000000002d9      0x127 bsp/bsp.o
+   .debug_loc     0x0000000000000400     0x866e drivers/drivers.o
+   .debug_loc     0x0000000000008a6e     0x1f20 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(adddf3.o)
+   .debug_loc     0x000000000000a98e     0x11e0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(divdf3.o)
+   .debug_loc     0x000000000000bb6e      0x134 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(gedf2.o)
+   .debug_loc     0x000000000000bca2      0x134 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(ledf2.o)
+   .debug_loc     0x000000000000bdd6     0x10a1 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(muldf3.o)
+   .debug_loc     0x000000000000ce77     0x16f3 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(subdf3.o)
+   .debug_loc     0x000000000000e56a      0x2aa d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixdfsi.o)
+   .debug_loc     0x000000000000e814      0x249 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixunsdfsi.o)
+   .debug_loc     0x000000000000ea5d      0x14b d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatsidf.o)
+   .debug_loc     0x000000000000eba8      0x14f d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatunsidf.o)
+   .debug_loc     0x000000000000ecf7      0x331 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatdidf.o)
+   .debug_loc     0x000000000000f028       0xaa d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clzsi2.o)
+  
+  .debug_ranges   0x0000000000000000     0x23c0
+   .debug_ranges  0x0000000000000000      0x130 rootdir.o
+   .debug_ranges  0x0000000000000130       0x70 bsp/bsp.o
+   .debug_ranges  0x00000000000001a0     0x11d0 drivers/drivers.o
+   .debug_ranges  0x0000000000001370      0x440 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(adddf3.o)
+   .debug_ranges  0x00000000000017b0      0x1c0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(divdf3.o)
+   .debug_ranges  0x0000000000001970       0xd0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(gedf2.o)
+   .debug_ranges  0x0000000000001a40       0xd0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(ledf2.o)
+   .debug_ranges  0x0000000000001b10      0x190 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(muldf3.o)
+   .debug_ranges  0x0000000000001ca0      0x430 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(subdf3.o)
+   .debug_ranges  0x00000000000020d0       0x80 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixdfsi.o)
+   .debug_ranges  0x0000000000002150       0x50 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(fixunsdfsi.o)
+   .debug_ranges  0x00000000000021a0       0x90 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatsidf.o)
+   .debug_ranges  0x0000000000002230       0x60 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatunsidf.o)
+   .debug_ranges  0x0000000000002290       0xe0 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(floatdidf.o)
+   .debug_ranges  0x0000000000002370       0x50 d:/����/��Ŀ/k210-linux0.11-vs/tools/bin/../lib/gcc/riscv64-unknown-elf/8.2.0\libgcc.a(_clzsi2.o)
+  del image.bin
+  ../tools/bin/riscv64-unknown-elf-objcopy.exe -O binary image.elf image.bin
+  make: Leaving directory 'D:/����/��Ŀ/K210-Linux0.11-VS/src_test'

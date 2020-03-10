@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBox_mustsyscallidlist.Text" xml:space="preserve">
+    <value>SYS_exit|93
+SYS_exit_group|94
+SYS_getpid|172
+SYS_kill|129
+SYS_read|63
+SYS_write|64
+SYS_open|1024
+SYS_openat|56
+SYS_close|57
+SYS_lseek|62
+SYS_brk|214
+SYS_link|1025
+SYS_unlink|1026
+SYS_mkdir|1030
+SYS_chdir|49
+SYS_getcwd|17
+SYS_stat|1038
+SYS_fstat|80
+SYS_lstat|1039
+SYS_fstatat|79
+SYS_access|1033
+SYS_faccessat|48
+SYS_pread|67
+SYS_pwrite|68
+SYS_uname|160
+SYS_getuid|174
+SYS_geteuid|175
+SYS_getgid|176
+SYS_getegid|177
+SYS_mmap|222
+SYS_munmap|215
+SYS_mremap|216
+SYS_time|1062
+SYS_getmainvars|2011
+SYS_rt_sigaction|134
+SYS_writev|66
+SYS_gettimeofday|169
+SYS_times|153
+SYS_fcntl|25
+SYS_getdents|61
+SYS_dup|23</value>
+  </data>
+  <data name="textBox_syscalllist.Text" xml:space="preserve">
+    <value>sys_setup,sys_exit,sys_fork,sys_read,
+sys_write,sys_open,sys_close,sys_waitpid,sys_creat,sys_link,
+sys_unlink,sys_execve,sys_chdir,sys_time,sys_mknod,sys_chmod,
+sys_chown,sys_break,sys_stat,sys_lseek,sys_getpid,sys_mount,
+sys_umount,sys_setuid,sys_getuid,sys_stime,sys_ptrace,sys_alarm,
+sys_fstat,sys_pause,sys_utime,sys_stty,sys_gtty,sys_access,
+sys_nice,sys_ftime,sys_sync,sys_kill,sys_rename,sys_mkdir,
+sys_rmdir,sys_dup,sys_pipe,sys_times,sys_prof,sys_brk,sys_setgid,
+sys_getgid,sys_signal,sys_geteuid,sys_getegid,sys_acct,sys_phys,
+sys_lock,sys_ioctl,sys_fcntl,sys_mpx,sys_setpgid,sys_ulimit,
+sys_uname,sys_umask,sys_chroot,sys_ustat,sys_dup2,sys_getppid,
+sys_getpgrp,sys_setsid,sys_sigaction,sys_sgetmask,sys_ssetmask,
+sys_setreuid,sys_setregid,sys_debug</value>
+  </data>
+</root>

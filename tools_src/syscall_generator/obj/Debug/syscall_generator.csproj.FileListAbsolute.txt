@@ -1,0 +1,9 @@
+D:\程序\项目\K210-Linux0.11-VS\tools_src\syscall_generator\bin\Debug\syscall_generator.exe.config
+D:\程序\项目\K210-Linux0.11-VS\tools_src\syscall_generator\bin\Debug\syscall_generator.exe
+D:\程序\项目\K210-Linux0.11-VS\tools_src\syscall_generator\bin\Debug\syscall_generator.pdb
+D:\程序\项目\K210-Linux0.11-VS\tools_src\syscall_generator\obj\Debug\syscall_generator.csprojAssemblyReference.cache
+D:\程序\项目\K210-Linux0.11-VS\tools_src\syscall_generator\obj\Debug\syscall_generator.Form1.resources
+D:\程序\项目\K210-Linux0.11-VS\tools_src\syscall_generator\obj\Debug\syscall_generator.Properties.Resources.resources
+D:\程序\项目\K210-Linux0.11-VS\tools_src\syscall_generator\obj\Debug\syscall_generator.csproj.GenerateResource.cache
+D:\程序\项目\K210-Linux0.11-VS\tools_src\syscall_generator\obj\Debug\syscall_generator.exe
+D:\程序\项目\K210-Linux0.11-VS\tools_src\syscall_generator\obj\Debug\syscall_generator.pdb
